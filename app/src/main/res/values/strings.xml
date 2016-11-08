@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">RSATools</string>
     <string name="text_button_generate">~</string>
+    <string name="text_button_generate_8">8</string>
+    <string name="text_button_generate_16">16</string>
+    <string name="text_tv_out_initial">8 or 16</string>
 </resources>

@@ -6,7 +6,6 @@ package io.github.alexeychurchill.rsatools.rsa;
 * */
 
 import android.content.Context;
-import android.util.Log;
 
 import java.util.Random;
 
