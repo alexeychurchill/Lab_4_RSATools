@@ -10,4 +10,5 @@
     <dimen name="fab_padding">5dp</dimen>
     <dimen name="fab_size">65dp</dimen>
     <dimen name="fab_text_size">28sp</dimen>
+    <dimen name="text_result_size">20sp</dimen>
 </resources>
