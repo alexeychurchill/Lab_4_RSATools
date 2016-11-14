@@ -1,48 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TabHost
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabHost"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="@dimen/activity_margin">
-    <android.support.v4.view.ViewPager
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        
-    </android.support.v4.view.ViewPager>
-    <TextView
-        android:id="@+id/tvOut"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:textSize="@dimen/text_size_big"
-        android:textColor="@color/colorBigText"
-        android:background="@drawable/bg_big_text"
-        android:text="@string/text_tv_out_initial"/>
+    android:layout_height="match_parent">
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right|end|bottom">
-        <Button
-            android:layout_width="@dimen/fab_size"
-            android:layout_height="@dimen/fab_size"
-            android:minWidth="0dp"
-            android:minHeight="0dp"
-            android:layout_margin="@dimen/fab_margin"
-            android:text="@string/text_button_generate_8"
-            android:textColor="@color/colorAccent"
-            android:textSize="@dimen/fab_text_size"
-            android:background="@drawable/bg_my_fab"
-            android:onClick="requestGenerate8" />
-        <Button
-            android:layout_width="@dimen/fab_size"
-            android:layout_height="@dimen/fab_size"
-            android:minWidth="0dp"
-            android:minHeight="0dp"
-            android:layout_margin="@dimen/fab_margin"
-            android:text="@string/text_button_generate_16"
-            android:textColor="@color/colorAccent"
-            android:textSize="@dimen/fab_text_size"
-            android:background="@drawable/bg_my_fab"
-            android:onClick="requestGenerate16" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        <fragment
+                android:name="io.github.alexeychurchill.rsatools.fragment.GeneratorFragment"
+                android:id="@+id/fragmentGenerator"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
     </LinearLayout>
-</FrameLayout>
+</TabHost>
