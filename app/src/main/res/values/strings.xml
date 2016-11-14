@@ -4,4 +4,10 @@
     <string name="text_button_generate_8">8</string>
     <string name="text_button_generate_16">16</string>
     <string name="text_tv_out_initial">8 or 16</string>
+    <string name="text_first_number">First number</string>
+    <string name="text_calculate">Calculate</string>
+    <string name="text_power">Second number</string>
+    <string name="text_result">Result</string>
+    <string name="text_mod">Mod</string>
+    <string name="text_incorrect_data">Incorrect data!</string>
 </resources>

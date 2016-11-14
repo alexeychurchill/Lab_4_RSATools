@@ -17,9 +17,14 @@ public class MainActivity extends AppCompatActivity {
             tabHost.setup();
 
             TabHost.TabSpec generatorTabSpec = tabHost.newTabSpec("generatorTabTag");
-            generatorTabSpec.setIndicator("Random");
+            generatorTabSpec.setIndicator("random");
             generatorTabSpec.setContent(R.id.fragmentGenerator);
             tabHost.addTab(generatorTabSpec);
+
+            TabHost.TabSpec powerMakerTabSpec = tabHost.newTabSpec("powerMakerTabTag");
+            powerMakerTabSpec.setIndicator("power");
+            powerMakerTabSpec.setContent(R.id.fragmentPowerMaker);
+            tabHost.addTab(powerMakerTabSpec);
 
             tabHost.setCurrentTab(0);
         }
